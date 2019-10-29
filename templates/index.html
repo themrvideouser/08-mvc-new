@@ -5,8 +5,14 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>hier ist keine index seite</h1>
-
+    <h1>{{welcometext}}</h1>
+    <p>Es ist das Jahr {{currentyear}}</p>
+    {% for people in vemap %}
+        <p>{{people}}</p>
+    {% endfor %}
+    {% if rich %}
+        <b>Rich</b>
+    {% endif %}
     <img src="/static/img/testbild.jpg" alt="testbild">
 
     <a href="/about-me">Zur About Seite</a>

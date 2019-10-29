@@ -8,4 +8,13 @@
     <h1>About Me:</h1>
     <a href="/">Zur Home Seite</a>
     <a href="/contact">Zur Kontakt Seite</a>
+    <form action="/contact" method="post">
+        <input type="text" name="contact-name" placeholder="Name eingeben">
+        <br>
+        <input type="email" name="contact-email" placeholder="E-Mail eingeben">
+        <br>
+        <textarea name="contact-message" id="" cols="30" rows="10" placeholder="Nachrict eingeben"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
 {% endblock content %}
