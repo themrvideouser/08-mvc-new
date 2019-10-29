@@ -1,15 +1,11 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>About Me Myself & I</title>
-    </head>
-    <body>
-        <h1>About Me:</h1>
-        <a href="/">Zur Home Seite</a>
-        <a href="/contact">Zur Kontakt Seite</a>
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}
+    About
+{% endblock title %}
+
+{% block content %}
+    <h1>About Me:</h1>
+    <a href="/">Zur Home Seite</a>
+    <a href="/contact">Zur Kontakt Seite</a>
+{% endblock content %}

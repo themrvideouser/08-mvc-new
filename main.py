@@ -18,6 +18,10 @@ def about():
 def contact():
     return render_template("contact.html")
 
+@app.route("/kaboom")
+def kaboom():
+    return render_template("kaboom.html")
+
 
 if __name__ == '__main__':
     app.run()
